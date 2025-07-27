@@ -40,8 +40,8 @@ christy-tutoring-website/
 
 Edit `index.html` and replace the following placeholders:
 
-- `[X]` - Your years of experience
-- `[your background]` - Your educational background
+- `35` - Your years of experience
+- `BS Maht Education & Computer Science` - Your educational background
 - `[Your degree/certification]` - Your credentials
 - `[Years of teaching experience]` - Your experience details
 - `[Relevant certifications or achievements]` - Your achievements
@@ -58,7 +58,7 @@ Edit `index.html` and replace the following placeholders:
 ### 3. Update Contact Information
 
 In the Contact section, update:
-- Email address: `christy@christywinstead.com`
+✔️- Email address: `christy@christywinstead.com`
 - Phone number: `(123) 456-7890`
 - Add your actual Calendly link in `js/main.js`
 
