@@ -73,12 +73,12 @@ body {
 
 .btn--secondary {
     background-color: transparent;
-    color: #2563eb;
-    border: 2px solid #2563eb;
+    color: #7b2a51;
+    border: 2px solid #7b2a51;
 }
 
 .btn--secondary:hover {
-    background-color: #2563eb;
+    background-color: #7b2a51;
     color: white;
     transform: translateY(-2px);
 }
@@ -111,7 +111,7 @@ body {
 .nav__logo {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #2563eb;
+    color: #7b2a51;
 }
 
 .nav__menu {
@@ -135,7 +135,7 @@ body {
 
 .nav__link:hover,
 .nav__link.active {
-    color: #2563eb;
+    color: #7b2a51;
 }
 
 .nav__link::after {
@@ -145,7 +145,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #2563eb;
+    background-color: #7b2a51;
     transition: width 0.3s ease;
 }
 
@@ -207,7 +207,7 @@ body {
 }
 
 .hero__title--accent {
-    color: #2563eb;
+    color: #7b2a51;
 }
 
 .hero__description {
@@ -331,7 +331,7 @@ body {
     padding: 1.5rem;
     background-color: white;
     border-radius: 0.5rem;
-    border-left: 4px solid #2563eb;
+    border-left: 4px solid #7b2a51;
 }
 
 .about__credentials h3 {
@@ -388,7 +388,7 @@ body {
 .subject-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
-    border-color: #2563eb;
+    border-color: #7b2a51;
 }
 
 .subject-card__icon {
@@ -398,7 +398,7 @@ body {
     width: 60px;
     height: 60px;
     background-color: #dbeafe;
-    color: #2563eb;
+    color: #7b2a51;
     border-radius: 0.75rem;
     margin-bottom: 1.5rem;
 }
@@ -436,7 +436,7 @@ body {
     content: '•';
     position: absolute;
     left: 0;
-    color: #2563eb;
+    color: #7b2a51;
     font-weight: bold;
 }
 
@@ -499,7 +499,7 @@ body {
 .testimonial-card__avatar {
     width: 50px;
     height: 50px;
-    background-color: #2563eb;
+    background-color: #7b2a51;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -561,7 +561,7 @@ body {
     width: 40px;
     height: 40px;
     background-color: #dbeafe;
-    color: #2563eb;
+    color: #7b2a51;
     border-radius: 0.5rem;
     flex-shrink: 0;
 }
@@ -577,7 +577,7 @@ body {
 }
 
 .contact__item a {
-    color: #2563eb;
+    color: #7b2a51;
     text-decoration: none;
 }
 
@@ -633,7 +633,7 @@ body {
 .form__select:focus,
 .form__textarea:focus {
     outline: none;
-    border-color: #2563eb;
+    border-color: #7b2a51;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
@@ -660,7 +660,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #2563eb;
+    color: #7b2a51;
 }
 
 .footer__brand p {
@@ -695,7 +695,7 @@ body {
 }
 
 .footer__section a:hover {
-    color: #2563eb;
+    color: #7b2a51;
 }
 
 .footer__bottom {
@@ -865,7 +865,7 @@ body {
 .form__input:focus,
 .form__select:focus,
 .form__textarea:focus {
-    outline: 2px solid #2563eb;
+    outline: 2px solid #7b2a51;
     outline-offset: 2px;
 }
 
