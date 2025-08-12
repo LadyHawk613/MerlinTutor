@@ -11,6 +11,12 @@
  --accent-color: #ff7f50; /* Example: coral */ 
 } 
 
+.dark-theme {
+  --background-color-light: #212121;
+  --text-color-light: #e0e0e0;
+  --primary-color-light: #1e90ff;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 12px;
@@ -68,7 +74,7 @@ body {
 }
 
 .btn--primary {
-    background-color: #2563eb;
+    background-color: #7b2a51;
     color: white;
 }
 
