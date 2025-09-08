@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+
 :root { 
- --primary-color: #008080; /* Your main dark teal */ 
- --background-color: #1a1a1a; 
- --text-color: #ffffff; 
- --accent-color: #ff7f50; /* Example: coral */ 
+ --primary-color: #22586a;   /* Deep Teal */
+ --secondary-color: #7b2a51; /* Magenta */
+ --background-color: #ffebd1; /* Light Cream */
+ --text-color: #1f2937;      /* Dark Gray for readability */
+ --accent-color: #ffebd1;    /* You can use cream as accent, or swap if needed */
 } 
 
 .dark-theme {
