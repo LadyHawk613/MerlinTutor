@@ -7,16 +7,10 @@
 :root { 
   --primary-color: #22586a;   /* Deep teal */
   --secondary-color: #7b2a51; /* Magenta */
-  --background-color: #1a1a1a; /* Dark background */
+  --background-color: #22586a; /* Deep Teal */
   --text-color: #ffebd1;      /* Cream text */
   --muted-text-color: #d1d5db; /* Subheadings, descriptions */
 } 
-
-.dark-theme {
-  --background-color-light: #7b2a51;
-  --text-color-light: #eba36e;
-  --primary-color-light: #1e90ff;
-}
 
 html {
     scroll-behavior: smooth;
@@ -24,7 +18,6 @@ html {
 }
 
 body {
-   
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
