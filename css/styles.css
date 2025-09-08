@@ -75,16 +75,16 @@ body {
 }
 
 .btn--primary {
-    background-color: #7b2a51;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
-
 .btn--primary:hover {
-    background-color: #7b2a51;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
-
+       
 .btn--secondary {
     background-color: transparent;
     color: #7b2a51;
@@ -125,7 +125,7 @@ body {
 .nav__logo {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #eba36e;
+    color: var(--secondary-color);
 }
 
 .nav__menu {
@@ -149,7 +149,7 @@ body {
 
 .nav__link:hover,
 .nav__link.active {
-    color: #eba36e;
+    color: var(--primary-color);
 }
 
 .nav__link::after {
@@ -411,7 +411,7 @@ body {
 .subject-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
-    border-color: #7b2a51;
+    border-color: var(--primary-color);
 }
 
 .subject-card__icon {
@@ -683,7 +683,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #7b2a51;
+    color: var(--secondary-color);
 }
 
 .footer__brand p {
