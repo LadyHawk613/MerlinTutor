@@ -101,7 +101,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(31, 41, 55, 0.95);
+    background-color: var(--primary-color);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #e5e7eb;
     z-index: 1000;
@@ -178,7 +178,7 @@ body {
     width: 25px;
     height: 3px;
     color: var(--text-color);
-    background-color: #1f2937;
+    background-color: var(--text-color);
     transition: all 0.3s ease;
 }
 
@@ -596,7 +596,7 @@ body {
 }
 
 .contact__item p {
-    var(--muted-text-color);
+    color: var(--muted-text-color);
 }
 
 .contact__item a {
@@ -683,7 +683,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .footer__brand p {
@@ -741,7 +741,7 @@ body {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background-color: white;
+       background-color: var(--background-color);
         flex-direction: column;
         justify-content: center;
         transition: right 0.3s ease;
