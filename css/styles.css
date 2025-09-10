@@ -86,14 +86,14 @@ body {
 }
        
 .btn--secondary {
-    background-color: transparent;
+    background-color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .btn--secondary:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color:  var(--text-color);
+    color: var(--secondary-color);
     transform: translateY(-2px);
 }
 
