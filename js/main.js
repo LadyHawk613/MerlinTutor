@@ -143,10 +143,10 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             // Replace with your actual Calendly link
-            const calendlyUrl = 'https://calendly.com/your-calendly-username';
+            const calendlyUrl = 'https://calendly.com/christy-winstead';
             
             // For now, show a placeholder message
-            showNotification('Calendly integration coming soon! Please use the contact form or email for now.', 'info');
+            // showNotification('Calendly integration coming soon! Please use the contact form or email for now.', 'info');
             
             // Uncomment the line below when you have your Calendly link ready
             // window.open(calendlyUrl, '_blank');
@@ -329,6 +329,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ===== EXTERNAL INTEGRATIONS =====
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" 
+     data-url="https://calendly.com/YOUR-USERNAME" 
+     style="min-width:320px; height:700px;">
+</div>
+<script type="text/javascript" 
+        src="https://assets.calendly.com/assets/external/widget.js" async>
+</script>
+<!-- Calendly inline widget end -->
 
 /**
  * Initialize Calendly widget (uncomment when ready to use)
