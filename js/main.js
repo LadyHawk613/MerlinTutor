@@ -44,17 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===== SCROLL EFFECTS =====
-    
-    // Header background on scroll
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-        } else {
-            header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-            header.style.boxShadow = 'none';
-        }
-    });
 
     // Active navigation link based on scroll position
     const sections = document.querySelectorAll('section[id]');
