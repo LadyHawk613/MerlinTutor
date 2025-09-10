@@ -199,7 +199,7 @@ body {
 .hero {
     padding-top: 8rem;
     padding-bottom: 4rem;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: var(--primary-color);
     color: var(--text-color);
     min-height: 100vh;
     display: flex;
@@ -222,7 +222,7 @@ body {
 }
 
 .hero__title--accent {
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .hero__description {
