@@ -184,7 +184,7 @@ body {
 .nav__toggle span {
     width: 25px;
     height: 3px;
-    background-color: var(--text-color);
+    background-color: var(--card-bg);
     transition: all 0.3s ease;
 }
 
