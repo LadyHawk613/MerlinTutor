@@ -364,7 +364,7 @@ body {
 
 .about__credentials li {
     padding: 0.5rem 0;
-    color: var(--muted-text-color);
+    color: var(--text-color);
     position: relative;
     padding-left: 1.5rem;
 }
@@ -373,7 +373,7 @@ body {
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--secondary-color);
+    color: var(--texr-color);
     font-weight: bold;
 }
 
@@ -754,7 +754,7 @@ body {
         right: -100%;
         width: 80%;
         height: 100vh;
-        background-color: var(--text-color);
+        background-color: var(--card-bg);
         flex-direction: column;
         padding: 4rem 2rem;
         transition: right 0.3s ease;
