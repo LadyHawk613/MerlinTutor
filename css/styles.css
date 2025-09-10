@@ -125,7 +125,7 @@ body {
 .nav__logo {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .nav__menu {
@@ -141,7 +141,7 @@ body {
 
 .nav__link {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
@@ -149,7 +149,7 @@ body {
 
 .nav__link:hover,
 .nav__link.active {
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .nav__link::after {
