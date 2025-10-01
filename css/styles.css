@@ -390,14 +390,14 @@ body {
 
 .subjects__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
 .subject-card {
     background-color: var(--card-bg);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1.25rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border: 1px solid var(--secondary-color);
     transition: all 0.3s ease;
@@ -422,7 +422,7 @@ body {
 }
 
 .subject-card__title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--text-color);
@@ -430,6 +430,7 @@ body {
 
 .subject-card__description {
     color: var(--text-color);
+    font-size: 0.95rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
