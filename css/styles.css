@@ -31,6 +31,13 @@ body {
     line-height: 1.6;
 }
 
+.card {
+  padding-top: 15px;      /* Space above the content */
+  padding-right: 50px;    /* Space to the right of the content */
+  padding-bottom: 15px;   /* Space below the content */
+  padding-left: 50px;     /* Space to the left of the content */
+}
+
 /* ===== UTILITY CLASSES ===== */
 .container {
     max-width: 1200px;
