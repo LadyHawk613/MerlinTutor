@@ -421,7 +421,18 @@ body {
 
 .subjects__header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.subjects__header .section__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem; /* optional: tighten spacing if you have a description */
+}
+
+.subjects__header .section__description {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 1rem auto; /* tighter margin below description */
 }
 
 .subjects__grid {
