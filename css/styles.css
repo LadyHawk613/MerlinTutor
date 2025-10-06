@@ -270,20 +270,40 @@ body {
     color: var(--text-color);
 }
 
+/* ===== OVERVIEW SECTION HEADING & DESCRIPTION ===== */
 .overview__intro {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem; /* reduced from 4rem to tighten spacing with tiles */
+}
+
+.overview__intro .section__title {
+    font-size: 2rem;  /* keep consistent */
+    margin-bottom: 0.75rem; /* slightly smaller spacing below title */
+}
+
+.overview__intro .section__description {
+    font-size: 1rem; /* slightly smaller for better proportion */
+    max-width: 700px; /* tighter than the previous 600-900px? adjust if needed */
+    margin: 0 auto; 
+    line-height: 1.6;
+}
+
+/* ===== OVERVIEW SECTION / WHY CHOOSE TILES ===== */
+.overview__container {
+    max-width: 900px; /* same as other sections */
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .benefits {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* similar to subjects grid */
     gap: 2rem;
 }
 
 .benefit {
     text-align: center;
-    padding: 2rem;
+    padding: 1.25rem; /* same as subject-card */
     border-radius: 1rem;
     background-color: var(--card-bg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -291,23 +311,23 @@ body {
 
 .benefit:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.4); /* same as subject-card hover */
 }
 
 .benefit__icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 80px;
+    width: 60px;  /* same as subject-card__icon */
+    height: 60px;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    border-radius: 50%;
+    border-radius: 0.75rem;
     margin-bottom: 1.5rem;
 }
 
 .benefit__title {
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* match subject-card__title */
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--text-color);
@@ -315,6 +335,7 @@ body {
 
 .benefit__description {
     color: var(--muted-text-color);
+    font-size: 0.95rem; /* match subject-card description */
     line-height: 1.6;
 }
 
