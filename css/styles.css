@@ -22,7 +22,9 @@
 html {
     scroll-behavior: smooth;
     font-size: 12px;
+    scroll-padding-top: 100px; /* adjust based on your header height */
 }
+
 
 body {
     background-color: var(--background-color);
