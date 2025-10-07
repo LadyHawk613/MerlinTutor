@@ -867,6 +867,46 @@ body {
   }
 }
 
+/* ===== PRICING SECTION ===== */
+.pricing {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing__card {
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.pricing__card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+/* ==== PAYMENT BUTTONS ==== */
 .payment-buttons {
   display: flex;
   flex-direction: column;
