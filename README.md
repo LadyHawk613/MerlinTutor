@@ -18,6 +18,7 @@ A professional, responsive website for tutoring services in mathematics, science
 ```
 christy-tutoring-website/
 ├── index.html          # Main HTML file
+├── thank-you.html
 ├── css/
 │   └── styles.css      # Main stylesheet
 ├── js/
