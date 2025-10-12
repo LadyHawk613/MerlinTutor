@@ -359,8 +359,11 @@
                     </div>
                     
                     <div class="contact__form">
+
                         <form name="contact" method="POST" data-netlify="true" class="contact__form">
-                        <input type="hidden" name="form-name" value="contact">
+                          <input type="hidden" name="form-name" value="contact">
+                          <input type="hidden" name="subject" value="New Message from Your Website">
+                          <input type="hidden" name="redirect" value="/?submitted=true">
 
                         <h3>Send a Message</h3>
                             <div class="form__group">
