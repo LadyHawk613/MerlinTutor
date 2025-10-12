@@ -116,12 +116,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 showNotification('Please enter a valid email address.', 'error');
                 return;
             }
-            
+
+            // Show thank-you message after successful form submission
+            document.addEventListener("DOMContentLoaded", function() {
+                const params = new URLSearchParams(window.location.search);
+                if (params.has("submitted")) {
+                    const thankYou = document.getElementById("thankYouMessage");
+                    if (thankYou) {
+                      thankYou.style.display = "block";
+                      // Optional: scroll smoothly to the message
+                      thankYou.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }
+                }
+            });
+
             // Simulate form submission (replace with actual form handling)
             showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
             
             // Create mailto link as fallback
-            const mailtoLink = `mailto:christy@mymerlintutor.com?subject=Tutoring Inquiry: ${subject}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+            const mailtoLink = `mailto:winstead.christine@gmail.com?subject=Tutoring Inquiry: ${subject}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
             
             // Reset form
             this.reset();
