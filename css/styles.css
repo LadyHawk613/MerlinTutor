@@ -591,7 +591,7 @@ body {
     font-size: 0.875rem;
 }
 
-/* ===== CONTACT SECTION ===== */
+/* === CONTACT SECTION LAYOUT === */
 .contact {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -614,17 +614,57 @@ body {
     margin-bottom: 2rem;
     color: var(--text-color);
 }
-
 .contact__details {
-    margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
+/* Each contact item (email, phone) */
 .contact__item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
 }
+
+/* Keep icons centered with text */
+.contact__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tidy up titles */
+.contact__item h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Link styling inherits global look */
+.contact__item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === RESPONSIVE: side-by-side layout for wider screens === */
+@media (min-width: 700px) {
+  .contact__details {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;  /* slightly better spacing on desktop */
+  }
+
+  .contact__item {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* ===== OLD CONTACT SECTION ===== */
 
 .contact__icon {
     display: flex;
