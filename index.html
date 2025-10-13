@@ -1,457 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional tutoring services in math, science, and computer skills. Personalized learning with Christy Winstead.">
-    <meta name="keywords" content="tutoring, math tutor, science tutor, computer skills, chess lessons, education">
-    <title>My Merlin Tutor - Professional Math, Science & Computer Skills Tutoring</title>
-    
-    <!-- Preconnect to Google Fonts for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Favicon (placeholder) -->
-    <link rel="icon" type="image/png" href="images/white-favicon.png" sizes="40x40">
-    
-</head>
-<body>
-    <!-- Header with navigation -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__brand">
-              <a href="#home" class="nav__logo">
-                  <img src="images/logo-teal_background.png" class="nav__logo-img">
-                  <span>My Merlin Tutor</span>
-              </a>
-            </div>
-            
-            <!-- Desktop Navigation -->
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About Me</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#subjects" class="nav__link">Subjects</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#pricing" class="nav__link">Pricing</a>
-                    </li>
-                </ul>
-                
-                <!-- Close button for mobile -->
-                <div class="nav__close" id="nav-close">
-                    <span>&times;</span>
-                </div>
-            </div>
-            
-            <!-- Schedule button -->
-            <div class="nav__actions">
-                <a href="#schedule" class="btn btn--primary">Schedule Session</a>
-                
-                <!-- Mobile menu toggle -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Main content -->
-    <main class="main">
-        <!-- Hero Section -->
-        <section class="hero section" id="home">
-            <div class="hero__container container">
-                <div class="hero__content">
-                    <h1 class="hero__title">
-                        Professional Tutoring<br>
-                        <span class="hero__title--accent">Math, Science, & Computer Skills</span>
-                    </h1>
-                    <p class="hero__description">
-                        Personalized learning experiences designed to help you achieve your educational goals with confidence and success.
-                    </p>
-                    <div class="hero__buttons">
-                        <a href="#about" class="btn btn--primary">Learn More</a>
-                        <a href="#contact" class="btn btn--secondary">Schedule Now</a>
-                    </div>
-                </div>
-                <div class="hero__image">
-                    <div class="hero__image-placeholder">
-                        <!-- Placeholder for hero image -->
-                        <img src="images/learning-image.jpg" alt="Learning-Image" width="400" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Overview Section -->
-        <section class="overview section">
-            <div class="overview__container container">
-                <div class="overview__intro">
-                    <h2 class="section__title">Why Choose My Merlin Tutor?</h2>
-                    <p class="section__description">
-                        With over 25 years of experience in education and a passion for helping students succeed, 
-                        you will get personalized tutoring that adapts to your unique learning style and pace.
-                    </p>
-                </div>
-                
-                <div class="benefits">
-                    <div class="benefit">
-                        <div class="benefit__icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>
-                        <h3 class="benefit__title">Personalized Approach</h3>
-                        <p class="benefit__description">
-                            Every lesson is tailored to your individual learning style, pace, and goals.
-                        </p>
-                    </div>
-                    
-                    <div class="benefit">
-                        <div class="benefit__icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="16" y1="2" x2="16" y2="6"></line>
-                                <line x1="8" y1="2" x2="8" y2="6"></line>
-                                <line x1="3" y1="10" x2="21" y2="10"></line>
-                            </svg>
-                        </div>
-                        <h3 class="benefit__title">Flexible Scheduling</h3>
-                        <p class="benefit__description">
-                            Online and in-person sessions available at times that work for your schedule.
-                        </p>
-                    </div>
-                    
-                    <div class="benefit">
-                        <div class="benefit__icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <h3 class="benefit__title">Proven Results</h3>
-                        <p class="benefit__description">
-                            Students consistently improve their understanding and confidence in their subjects.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Overview Section -->
-        
-        <!-- About Section -->
-        <!-- End About Section -->
-
-        <!-- Subjects Section -->
-        <section class="subjects section" id="subjects">
-            <div class="subjects__container container">
-                <div class="subjects__header">
-                    <h2 class="section__title">Subjects Currently Offered</h2>
-                </div>
-                
-                <div class="subjects__grid">
-                    <div class="subject-card">
-                        <div class="subject-card__icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <path d="M9 9h6v6H9z"></path>
-                                <path d="M9 1v6"></path>
-                                <path d="M15 1v6"></path>
-                                <path d="M9 15v6"></path>
-                                <path d="M15 15v6"></path>
-                                <path d="M1 9h6"></path>
-                                <path d="M1 15h6"></path>
-                                <path d="M17 9h6"></path>
-                                <path d="M17 15h6"></path>
-                            </svg>
-                        </div>
-                        <h3 class="subject-card__title">Mathematics</h3>
-                        <p class="subject-card__description">
-                            From basic arithmetic to advanced algebra and geometry, students build 
-                            strong mathematical foundations and problem-solving skills.
-                        </p>
-                        <ul class="subject-card__details">
-                            <li>Elementary Math (K-5)</li>
-                            <li>Middle School Math (6-8)</li>
-                            <li>High School Algebra & Geometry</li>
-                            <li>Test Preparation (SAT, ACT)</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="subject-card">
-                        <div class="subject-card__icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 3v18"></path>
-                                <path d="M8 21l4-7 4 7"></path>
-                                <path d="M8 3l4 7 4-7"></path>
-                            </svg>
-                        </div>
-                        <h3 class="subject-card__title">Science</h3>
-                        <p class="subject-card__description">
-                            Making science concepts clear and exciting through hands-on examples and 
-                            real-world applications that spark curiosity and understanding.
-                        </p>
-                        <ul class="subject-card__details">
-                            <li>General Science (K-8)</li>
-                            <li>Biology Fundamentals</li>
-                            <li>Chemistry Basics</li>
-                            <li>Physics Concepts</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="subject-card">
-                        <div class="subject-card__icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                        </div>
-                        <h3 class="subject-card__title">Computer Skills</h3>
-                        <p class="subject-card__description">
-                            Essential digital literacy skills for the modern world, from basic computer 
-                            operation to internet safety and productivity software.
-                        </p>
-                        <ul class="subject-card__details">
-                            <li>Basic Computer Operation</li>
-                            <li>Internet Safety & Digital Citizenship</li>
-                            <li>Microsoft Office Suite</li>
-                            <li>Email & Online Communication</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <!-- End Subjects Section -->
-        
-        <!-- Pricing Section -->
-        <section class="pricing section" id="pricing">
-          <div class="container">
-            <h2 class="section__title">Pricing</h2>
-            <p class="section__description">
-              Choose your preferred session length. You can purchase one or multiple sessions at once.
-            </p>
-
-            <div class="pricing__grid">
-              <div class="pricing__card">
-                <h3>40-Minute Session</h3>
-                <p class="price">$25 per session</p>
-                <a href="https://buy.stripe.com/cNi6oI4y15L18ow4YPeAg01" target="_blank" class="btn btn--primary btn--large">Buy Now</a>
-              </div>
-
-              <div class="pricing__card">
-                <h3>60-Minute Session</h3>
-                <p class="price">$40 per session</p>
-                <a href="https://buy.stripe.com/8x29AU0hL4GX34c1MDeAg02" target="_blank" class="btn btn--primary btn--large">Buy Now</a>
-              </div>
-
-              <!-- Add more pricing cards as needed -->
-              <!-- Example:
-              <div class="pricing__card">
-                <h3>4-Session Package</h3>
-                <p class="price">$150 (Save $10)</p>
-                <a href="#" class="btn btn--primary btn--large">Buy Now</a>
-              </div>
-              -->
-            </div> 
-          </div>
-        </section>
-        <!-- end pricing section -->
-        
-        <!-- Testimonials Section -->
-        <!-- End Testimonials Section -->
-
-        <!-- Schedule Section -->
-        <section class="schedule section" id="schedule">
-          <div class="container">
-            <h2 class="section__title">Schedule a Lesson</h2>
-            <p class="section__description">
-              Once you’ve purchased your sessions, you’ll be able to book your preferred times here.
-            </p>
-
-            <div class="schedule__placeholder">
-              <p>📅 Scheduling system coming soon!</p>
-              <p>You’ll soon be able to book directly from this page.</p>
-              <a href="#contact" class="btn btn--primary">Contact Me to Schedule</a>
-            </div>
-          </div>
-        </section>
-        <!-- End Schedule Section -->
-        
-        <!-- Contact Section -->
-        <section class="contact section" id="contact">
-          <div class="container">
-            <h2 class="section__title">Contact</h2>
-                <p class="section__description">
-                   Get in touch to discuss your learning goals and schedule your first session.
-                </p>
-           </div>
-
-<div 
-    style="text-align:center; margin-top:20px; margin-bottom:10px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
-</div>
-                
-                <div class="contact__content">
-                    <div class="contact__info">
-                        <h3>Contact Information</h3>
-                        <div class="contact__details">
-                            <div class="contact__item">
-                                <div class="contact__icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Email</h4>
-                                    <p><a href="mailto:winstead.christine@gmail.com">winstead.christine@gmail.com</a></p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact__item">
-                                <div class="contact__icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Phone</h4>
-                                    <p><a href="tel:+19842201632">(984) 220-1632</a></p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact__item">
-                                <div class="contact__icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Schedule Online</h4>
-                                    <p>Book your session using [to be determined-3]</p>
-                                </div>
-                            </div>
-                        </div>
-
-<!-- Calendly inline widget begin -->
-
-<!-- Calendly inline widget end -->
-
-
-                    </div>
-                    
-                    <div class="contact__form">
-
-                        <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="contact__form">
-                          <input type="hidden" name="form-name" value="contact">
-
-                        <h3>Send a Message</h3>
-                            <div class="form__group">
-                                <label for="name" class="form__label">Name</label>
-                                <input type="text" id="name" name="name" class="form__input" required>
-                            </div>
-                            
-                            <div class="form__group">
-                                <label for="email" class="form__label">Email Address</label>
-                                <input type="email" id="email" name="email" class="form__input" required>
-                            </div>
-                            
-                            <div class="form__group">
-                                <label for="subject" class="form__label">Subject of Interest</label>
-                                <select id="subject" name="subject" class="form__select" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="mathematics">Mathematics</option>
-                                    <option value="science">Science</option>
-                                    <option value="computer-skills">Computer Skills</option>
-                                    <option value="chess">Chess</option>
-                                    <option value="multiple">Multiple Subjects</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form__group">
-                                <label for="message" class="form__label">Message</label>
-                                <textarea id="message" name="message" class="form__textarea" rows="5" 
-                                    placeholder="Tell me about your learning goals, current level, and any specific areas you'd like to focus on..."></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn btn--primary btn--large">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional tutoring services in math, science, and computer skills. Personalized learning with Christy Winstead." />
+  <title>My Merlin Tutor - Professional Math, Science & Computer Skills Tutoring</title>
   
-    </main>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/white-favicon.png" sizes="40x40">
+</head>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__container container">
-            <div class="footer__content">
-                <div class="footer__brand">
-                    <h3>My Merlin Tutor</h3>
-                    <p>Empowering students to achieve their educational goals through personalized learning.</p>
-                </div>
-                
-                <div class="footer__links">
-                    <div class="footer__section">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About Me</a></li>
-                            <li><a href="#subjects">Subjects</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer__section">
-                        <h4>Subjects</h4>
-                        <ul>
-                            <li>Mathematics</li>
-                            <li>Science</li>
-                            <li>Computer Skills</li>
-                            <li>Chess</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer__section">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li><a href="mailto:christy@mymerlintutor.com">christy@mymerlintutor.com</a></li>
-                            <li><a href="tel:+19842201632">(984) 220-1632</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer__bottom">
-                <p>&copy; 2025 My Merlin Tutor. All rights reserved.</p>
-                <p>Built with care for better learning experiences.</p>
-            </div>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <img src="images/logo-teal_background.png" alt="My Merlin Tutor Logo" />
+        <span>My Merlin Tutor</span>
+      </a>
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#subjects" class="nav__link">Subjects</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="container">
+        <h1>Professional Tutoring</h1>
+        <p>Math, Science, and Computer Skills — personalized for every learner.</p>
+        <a href="#contact" class="btn btn--primary">Get Started</a>
+      </div>
+    </section>
+
+    <!-- SUBJECTS -->
+    <section id="subjects" class="section">
+      <div class="container">
+        <h2>Subjects Offered</h2>
+        <ul>
+          <li>Mathematics (K–12, Algebra, Geometry, SAT/ACT Prep)</li>
+          <li>Science (Biology, Chemistry, Physics)</li>
+          <li>Computer Skills (Basic Digital Literacy, Microsoft Office)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2>Pricing</h2>
+        <div class="pricing__grid">
+          <div class="pricing__card">
+            <h3>40-Minute Session</h3>
+            <p>$25</p>
+            <a href="https://buy.stripe.com/cNi6oI4y15L18ow4YPeAg01" target="_blank" class="btn btn--primary">Buy Now</a>
+          </div>
+          <div class="pricing__card">
+            <h3>60-Minute Session</h3>
+            <p>$40</p>
+            <a href="https://buy.stripe.com/8x29AU0hL4GX34c1MDeAg02" target="_blank" class="btn btn--primary">Buy Now</a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Get in touch to schedule your session or ask a question.</p>
+
+        <!-- ✅ Netlify Contact Form -->
+        <form name="contact" method="POST" data-netlify="true" class="contact__form">
+          <input type="hidden" name="form-name" value="contact">
+
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+
+          <div class="form__group">
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject" required>
+              <option value="">Select a subject</option>
+              <option>Math</option>
+              <option>Science</option>
+              <option>Computer Skills</option>
+              <option>Multiple</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Your message..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--large">Send Message</button>
+        </form>
+
+        <!-- ✅ Inline Thank You Message -->
+        <div id="thankyou-message" style="display:none; text-align:center; margin-top:2rem;">
+          <h3>Thank you!</h3>
+          <p>Your message has been successfully sent. I’ll be in touch soon!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 My Merlin Tutor. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ✅ Show thank-you message after form submission
+    const form = document.querySelector('form[name="contact"]');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      fetch("/", {
+        method: "POST",
+        body: formData,
+      })
+      .then(() => {
+        form.style.display = "none";
+        document.getElementById("thankyou-message").style.display = "block";
+      })
+      .catch((error) => alert("Error submitting form: " + error));
+    });
+  </script>
 </body>
 </html>
-
