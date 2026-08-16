@@ -33,6 +33,11 @@ body {
     line-height: 1.6;
 }
 
+#my-cal-inline iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+}
 .card {
   padding-top: 15px;      /* Space above the content */
   padding-right: 100px;    /* Space to the right of the content */
