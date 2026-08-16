@@ -264,7 +264,7 @@
             </p>
             
             <!-- Cal.com Inline Embed Begin -->
-            <div style="width:100%;height:700px;overflow:scroll" id="my-cal-inline"></div>
+            <div style="width:100%; min-height:700px;" id="my-cal-inline"></div>
             <script type="text/javascript">
               (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function (...args) { let q = c.q; if (!q) { let d = c; c = (...args) => { d.q.push(args); }; c.q = []; } return c.q.push(args); }; let c = C.Cal; c.ns = {}; c.q = []; A.async = true; A.src = L; d.head.appendChild(A); })(window, document.createElement('script'), 'https://app.cal.com/embed/js/embed.js');
               Cal('init', {origin:'https://cal.com'});
@@ -278,8 +278,7 @@
             <!-- Cal.com Inline Embed End -->
              
           </div>
-        </section>
-        <!-- End Schedule Section -->
+        </section> <!-- End Schedule Section -->
         
         <!-- Contact Section -->
         <section class="contact section" id="contact">
