@@ -214,11 +214,11 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
     background: var(--primary-color);
     color: var(--text-color);
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
 }
@@ -822,6 +822,11 @@ body {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 992px) {
+    .hero {
+        padding-top: 6rem;
+        padding-bottom: 2.5rem;
+    }
+
     .hero__container {
         grid-template-columns: 1fr;
         text-align: center;
