@@ -351,44 +351,19 @@
         </div>
     </footer>
 
-    <!-- Cal.com popup embed -->
-    <script type="text/javascript">
-      (function (C, A, L) {
-        let p = function (a, ar) {
-          a.q.push(ar);
-        };
-        let d = C.document;
-        C.Cal = C.Cal || function () {
-          let cal = C.Cal;
-          let ar = arguments;
-          if (!cal.loaded) {
-            cal.ns = {};
-            cal.q = cal.q || [];
-            d.head.appendChild(d.createElement("script")).src = A;
-            cal.loaded = true;
-          }
-          if (ar[0] === L) {
-            const api = function () {
-              p(api, arguments);
-            };
-            const namespace = ar[1];
-            api.q = api.q || [];
-            if (typeof namespace === "string") {
-              cal.ns[namespace] = cal.ns[namespace] || api;
-              p(cal.ns[namespace], ar);
-              p(cal, ["initNamespace", namespace]);
-            } else {
-              p(cal, ar);
-            }
-            return;
-          }
-          p(cal, ar);
-        };
-      })(window, "https://app.cal.com/embed/embed.js", "init");
-      Cal("init", { origin: "https://app.cal.com" });
-    </script>
+    <!-- Compact Cal.com booking modal -->
+    <div class="booking-modal" id="booking-modal" aria-hidden="true">
+      <div class="booking-modal__backdrop" data-booking-modal-close></div>
+      <div class="booking-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+        <div class="booking-modal__header">
+          <h2 id="booking-modal-title">Schedule Your Session</h2>
+          <button type="button" class="booking-modal__close" aria-label="Close scheduling window" data-booking-modal-close>&times;</button>
+        </div>
+        <iframe id="booking-modal-frame" class="booking-modal__frame" title="Cal.com scheduling calendar" loading="lazy"></iframe>
+      </div>
+    </div>
 
     <!-- JavaScript -->
-    <script src="js/main.js?v=modal"></script>
+    <script src="js/main.js?v=modal3"></script>
 </body>
 </html>

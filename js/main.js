@@ -3,31 +3,53 @@
  * Handles navigation, form submission, and interactive elements
  */
 
-// ===== CAL.COM MODAL BOOKING =====
-// Use event delegation so this works regardless of when the page finishes loading.
+// ===== COMPACT CAL.COM BOOKING MODAL =====
+const bookingModal = document.getElementById('booking-modal');
+const bookingModalFrame = document.getElementById('booking-modal-frame');
+const bookingModalClose = bookingModal ? bookingModal.querySelector('[data-booking-modal-close]') : null;
+
+function closeBookingModal() {
+    if (!bookingModal) {
+        return;
+    }
+
+    bookingModal.classList.remove('is-open');
+    bookingModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('booking-modal-open');
+
+    if (bookingModalFrame) {
+        bookingModalFrame.src = '';
+    }
+}
+
 document.addEventListener('click', function(e) {
-    const button = e.target.closest('[data-cal-link]');
-    if (!button) {
+    const bookingButton = e.target.closest('[data-cal-link]');
+    const closeButton = e.target.closest('[data-booking-modal-close]');
+
+    if (closeButton) {
+        closeBookingModal();
+        return;
+    }
+
+    if (!bookingButton || !bookingModal || !bookingModalFrame) {
         return;
     }
 
     e.preventDefault();
+    bookingModalFrame.src = `https://app.cal.com/${bookingButton.dataset.calLink}/embed?theme=light&embedType=modal&embed=`;
+    bookingModal.classList.add('is-open');
+    bookingModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('booking-modal-open');
 
-    let config = {};
-    try {
-        config = JSON.parse(button.dataset.calConfig || '{}');
-    } catch (error) {
-        console.warn('Unable to parse Cal.com button configuration.', error);
+    const closeControl = bookingModal.querySelector('.booking-modal__close');
+    if (closeControl) {
+        closeControl.focus();
     }
+});
 
-    if (typeof window.Cal === 'function') {
-        window.Cal('modal', {
-            calLink: button.dataset.calLink,
-            config,
-            calOrigin: 'https://app.cal.com'
-        });
-    } else {
-        window.location.href = button.href;
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && bookingModal && bookingModal.classList.contains('is-open')) {
+        closeBookingModal();
     }
 });
 
