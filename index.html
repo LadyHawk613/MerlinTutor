@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -248,15 +247,6 @@
                 <p class="price">$50 per session</p>
                 <a href="https://buy.stripe.com/8x29AU0hL4GX34c1MDeAg02" target="_blank" class="btn btn--primary btn--large">Buy Now</a>
               </div>
-
-              <!-- Add more pricing cards as needed -->
-              <!-- Example:
-              <div class="pricing__card">
-                <h3>4-Session Package</h3>
-                <p class="price">$150 (Save $10)</p>
-                <a href="#" class="btn btn--primary btn--large">Buy Now</a>
-              </div>
-              -->
             </div> 
           </div>
         </section>
@@ -273,11 +263,20 @@
                 Select your preferred time below to book your session.
             </p>
             
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/christy-winstead/tutoring?hide_landing_page_details=1&hide_gdpr_banner=1" style="min-width:320px;height:1050px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
-              
+            <!-- Cal.com Inline Embed Begin -->
+            <div style="width:100%;height:700px;overflow:scroll" id="my-cal-inline"></div>
+            <script type="text/javascript">
+              (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function (...args) { let q = c.q; if (!q) { let d = c; c = (...args) => { d.q.push(args); }; c.q = []; } return c.q.push(args); }; let c = C.Cal; c.ns = {}; c.q = []; A.async = true; A.src = L; d.head.appendChild(A); })(window, document.createElement('script'), 'https://app.cal.com/embed/js/embed.js');
+              Cal('init', {origin:'https://cal.com'});
+              Cal('inline', {
+                elementOrSelector:'#my-cal-inline',
+                calLink: 'christy-winstead/tutoring',
+                layout: 'month_view'
+              });
+              Cal('ui', {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+            </script>
+            <!-- Cal.com Inline Embed End -->
+             
           </div>
         </section>
         <!-- End Schedule Section -->
@@ -290,6 +289,7 @@
                 <p class="section__description">
                    Get in touch to discuss your learning goals and schedule your first session.
                 </p>    
+                
                 <div class="contact__content">
                     <div class="contact__info">
                         <div class="contact__details">
