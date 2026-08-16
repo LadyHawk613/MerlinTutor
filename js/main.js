@@ -3,6 +3,34 @@
  * Handles navigation, form submission, and interactive elements
  */
 
+// ===== CAL.COM MODAL BOOKING =====
+// Use event delegation so this works regardless of when the page finishes loading.
+document.addEventListener('click', function(e) {
+    const button = e.target.closest('[data-cal-link]');
+    if (!button) {
+        return;
+    }
+
+    e.preventDefault();
+
+    let config = {};
+    try {
+        config = JSON.parse(button.dataset.calConfig || '{}');
+    } catch (error) {
+        console.warn('Unable to parse Cal.com button configuration.', error);
+    }
+
+    if (typeof window.Cal === 'function') {
+        window.Cal('modal', {
+            calLink: button.dataset.calLink,
+            config,
+            calOrigin: 'https://app.cal.com'
+        });
+    } else {
+        window.location.href = button.href;
+    }
+});
+
 // ===== NAVIGATION FUNCTIONALITY =====
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
