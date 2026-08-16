@@ -33,11 +33,6 @@ body {
     line-height: 1.6;
 }
 
-#my-cal-inline iframe {
-    width: 100% !important;
-    height: 100% !important;
-    border: none;
-}
 .card {
   padding-top: 15px;      /* Space above the content */
   padding-right: 100px;    /* Space to the right of the content */
@@ -968,12 +963,6 @@ body {
   text-transform: none; /* keep natural capitalization */
 }
 
-/* ===== SCHEDULE SECTION ===== */
-#my-cal-inline iframe {
-    width: 100% !important;
-    height: 100% !important;
-    border: none;
-}
 /* ===== THANK YOU MESSAGE ===== */
 .thank-you-message {
   background-color: rgba(0, 255, 128, 0.1);
