@@ -969,24 +969,11 @@ body {
 }
 
 /* ===== SCHEDULE SECTION ===== */
-.schedule__placeholder {
-  border: 2px dashed rgba(255, 255, 255, 0.5);
-  border-radius: 1rem;
-  padding: 3rem 2rem;
-  margin-top: 2rem;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.1);
+#my-cal-inline iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
 }
-
-.schedule__placeholder p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.schedule__placeholder .btn {
-  margin-top: 1rem;
-}
-
 /* ===== THANK YOU MESSAGE ===== */
 .thank-you-message {
   background-color: rgba(0, 255, 128, 0.1);
