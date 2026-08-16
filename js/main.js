@@ -342,36 +342,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ===== EXTERNAL INTEGRATIONS =====
-
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" 
-     data-url="https://calendly.com/YOUR-USERNAME" 
-     style="min-width:320px; height:700px;">
-</div>
-<script type="text/javascript" 
-        src="https://assets.calendly.com/assets/external/widget.js" async>
-</script>
-<!-- Calendly inline widget end -->
-
-/**
- * Initialize Calendly widget (uncomment when ready to use)
- * Make sure to include Calendly's widget script in your HTML
- */
-/*
-function initializeCalendly() {
-    if (typeof Calendly !== 'undefined') {
-        const calendlyBtn = document.getElementById('calendly-btn');
-        if (calendlyBtn) {
-            calendlyBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                Calendly.initPopupWidget({
-                    url: 'https://calendly.com/your-calendly-username'
-                });
-            });
-        }
-    }
-}
-*/
+// Cal.com is initialized inline in index.html so the booking widget can render
+// directly inside the schedule section.
 
 /**
  * Google Analytics integration (uncomment when ready to use)
