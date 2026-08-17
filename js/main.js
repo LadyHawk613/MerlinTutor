@@ -36,7 +36,7 @@ document.addEventListener('click', function(e) {
     }
 
     e.preventDefault();
-    bookingModalFrame.src = `https://app.cal.com/${bookingButton.dataset.calLink}/embed?theme=light&embedType=modal&embed=`;
+    bookingModalFrame.src = `https://app.cal.com/${bookingButton.dataset.calLink}/embed?theme=light&embedType=modal&layout=month_view&embed=`;
     bookingModal.classList.add('is-open');
     bookingModal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('booking-modal-open');
