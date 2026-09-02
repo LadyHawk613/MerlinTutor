@@ -518,17 +518,25 @@ body {
 
 .testimonials__header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+.testimonials__header .section__description {
+    margin-bottom: 0;
 }
 
 .testimonials__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
+    align-items: stretch;
 }
 
 .testimonial-card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--card-bg);
+    border: 1px solid var(--secondary-color);
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -542,6 +550,24 @@ body {
 
 .testimonial-card__content {
     margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.testimonial-card__rating {
+    margin-bottom: 0.65rem;
+    color: #ffd166;
+    font-size: 1.25rem;
+    line-height: 1;
+    letter-spacing: 0.12rem;
+}
+
+.testimonial-card__course {
+    min-height: 2.7em;
+    margin-bottom: 1.25rem;
+    color: var(--text-color);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.35;
 }
 
 .testimonial-card__text {
@@ -549,6 +575,7 @@ body {
     color: var(--muted-text-color);
     line-height: 1.7;
     position: relative;
+    padding-left: 1.25rem;
 }
 
 .testimonial-card__text::before {
@@ -556,8 +583,8 @@ body {
     font-size: 3rem;
     color: var(--muted-text-color);
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: -12px;
+    left: 0;
     font-family: serif;
 }
 
@@ -570,7 +597,7 @@ body {
 .testimonial-card__avatar {
     width: 50px;
     height: 50px;
-    background-color: var(--card-bg);
+    background-color: var(--secondary-color);
     color: var(--text-color);
     border-radius: 50%;
     display: flex;
@@ -589,6 +616,20 @@ body {
 .testimonial-card__role {
     color: var(--muted-text-color);
     font-size: 0.875rem;
+}
+
+@media (max-width: 700px) {
+    .testimonials__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .testimonial-card__course {
+        min-height: auto;
+    }
 }
 
 /* === CONTACT SECTION LAYOUT === */
